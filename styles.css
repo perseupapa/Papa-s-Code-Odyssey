@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  header {
+    position: relative;
+  }
+  
+  
+  .logo {
+    height: 135px;
+    width: 135px;
+    position: absolute;
+    top: 50px;
+    left: 110px;
+    padding: 30px;
+    animation-name: subir;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes subir {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-50px);
+    }
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .titulo-principal {
+    color: black;
+    letter-spacing: 1px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 29px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .titulo-principal:hover {
+    color: #aa0202;
+    transform: scale(1.1);
+  }
+
+  .subtitulo {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .container > * {
+    flex: 1;
+  }
+  
+  main {
+    max-width: 400px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .second-section {
+    background-image: url("background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .enter-button {
+    background-color: rgb(3, 4, 77);
+    color: #f7f4f4;
+    font-weight: bold;
+    border-radius: 5px;
+    animation: pulse 1s infinite;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  
+  h6 {
+    margin-top: 170px;
+  }
+  
+  .register {
+    margin-top: 20px;
+    font-size: small;
+  }
+
+  .form-field {
+    margin: 10px 0;
+  }
+  
+  .form-field input {
+    width: 100%;
+    padding: 10px 0;
+  }
